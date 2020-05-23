@@ -9,4 +9,5 @@
 :root, body {
     height: 100vh;
     font-family: 'Inter', sans-serif;
+    font-size: 32px;
 }
