@@ -28,6 +28,8 @@ section .text-detail {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 section .text-detail :nth-child(2) {
@@ -63,6 +65,8 @@ section .image-user > img {
     box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -3px 10px 5px 0px rgba(0,0,0,0.75);
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 .control {
@@ -124,6 +128,18 @@ section .image-user > img {
         padding: 0;
         height: 100%;
 
+    }
+}
+
+/* Animação */
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
 
