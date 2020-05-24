@@ -103,6 +103,16 @@ section .image-user > img {
     transform: translateY(3px);
 }
 
+.attribution {
+    margin-top: 20px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
 /* Breakpoints */
 @media (max-width: 892px) {
     .content {
