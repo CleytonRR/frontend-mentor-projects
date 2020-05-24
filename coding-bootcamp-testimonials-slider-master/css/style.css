@@ -140,6 +140,10 @@ section .image-user > img {
 }
 
 @media (max-width: 591px) {
+    section .image-user > img {
+        margin-top: 10px;
+    }
+
     section .text-detail {
         width: 100%;
         align-items: center;
@@ -151,7 +155,7 @@ section .image-user > img {
 
 @media (max-width: 366px) {
     section .image-user > img {
-        margin-top: 3%;
+        margin-top: 10px;
     }
 }
 
