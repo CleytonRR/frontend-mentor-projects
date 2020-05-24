@@ -19,6 +19,15 @@ section {
     background-size: contain;
 }
 
+/* Div with text and image */
+.content {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text-section */
 section .text-detail {
     display: inline-block;
     background: url(../images/pattern-quotes.svg) no-repeat;
@@ -32,6 +41,7 @@ section .text-detail {
     animation-duration: 1s;
 }
 
+/* Name - profession */
 section .text-detail :nth-child(2) {
     margin: 30px 0;
     font-size: 0.5rem;
@@ -46,12 +56,7 @@ section .text-detail :nth-child(2) {
     color: hsl(240, 18%, 77%);
 }
 
-.content {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* Section for image */
 
 section .image-user{
     display: inline-block;
@@ -68,6 +73,8 @@ section .image-user > img {
     animation-name: fade;
     animation-duration: 1s;
 }
+
+/* Control of Slider */
 
 .control {
     display: flex;
@@ -96,6 +103,7 @@ section .image-user > img {
     transform: translateY(3px);
 }
 
+/* Breakpoints */
 @media (max-width: 892px) {
     .content {
         flex-direction: column-reverse;
@@ -131,8 +139,13 @@ section .image-user > img {
     }
 }
 
-/* Animação */
+@media (max-width: 366px) {
+    section .image-user > img {
+        margin-top: 3%;
+    }
+}
 
+/* Animation */
 @keyframes fade {
     from {
         opacity: 0;
