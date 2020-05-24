@@ -29,7 +29,7 @@
 <body>
   <main>
 
-    <section class="active">
+    <section id="slider-1" class="active">
       <div class="content">
         <div class="text-detail">
           <p>
@@ -45,10 +45,10 @@
         <div class="image-user">
           <img src="images/image-tanya.jpg" alt="Tanya Sinclair - UX Engineer">
           <div class="control">
-            <button class="control-btn">
+            <button onclick="clicou(this.name)" name="preview" class="control-btn">
               <img src="images/icon-prev.svg" alt="Preview">
             </button>
-            <button class="control-btn">
+            <button onclick="clicou(this.name)" name="next" class="control-btn">
               <img src="images//icon-next.svg" alt="Next">
             </button>
           </div>
@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <section style="display: none;">
+    <section id="slider-2" style="display: none;">
       <div class="content">
         <div class="text-detail">
           <p> “ If you want to lay the best foundation possible I’d recommend taking this course.
@@ -71,10 +71,10 @@
         <div class="image-user">
           <img src="images/image-john.jpg" alt="John Tarkpor - Junior Front-end Developer">
           <div class="control">
-            <button class="control-btn">
+            <button onclick="clicou()" class="control-btn">
               <img src="images/icon-prev.svg" alt="Preview">
             </button>
-            <button class="control-btn">
+            <button onclick="clicou()" class="control-btn">
               <img src="images//icon-next.svg" alt="Next">
             </button>
           </div>
@@ -88,6 +88,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="scripts/slider-simple.js"></script>
 </body>
 
 </html>
