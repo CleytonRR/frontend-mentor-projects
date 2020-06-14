@@ -23,6 +23,7 @@ export const MenuItem = styled.li`
   color: hsl(273, 4%, 51%);
   text-transform: uppercase;
   margin: auto 15px;
+  letter-spacing: 1px;
   cursor: pointer;
 
   &:hover {
