@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContainerMenu = styled.nav`
   width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 `;
 
 export const LogoMenu = styled.img`

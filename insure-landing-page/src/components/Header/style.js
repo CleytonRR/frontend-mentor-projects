@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-import BackgroundSvg from "../../assets/bg-pattern-intro-right-desktop.svg";
+import BackgroundSvg from '../../assets/bg-pattern-intro-right-desktop.svg';
 
 export const HeaderContainer = styled.header`
   width: 100vw;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerText = styled.div`
-  font-family: "DM Serif Display", serif;
+  font-family: 'DM Serif Display', serif;
   width: 600px;
 `;
 
@@ -32,7 +32,7 @@ export const Title = styled.h1`
   margin-bottom: 0;
 
   &:before {
-    content: "";
+    content: '';
     width: 100px;
     height: 2px;
     display: block;
@@ -43,7 +43,7 @@ export const Title = styled.h1`
 
 export const Detail = styled.p`
   color: hsl(0, 0%, 98%);
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
 `;
 
 export const Image = styled.img`
@@ -53,7 +53,7 @@ export const Image = styled.img`
 
 export const Button = styled.button`
   background-color: hsl(0, 0%, 98%);
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   color: hsl(256, 26%, 20%);
   font-weight: 700;
   text-transform: uppercase;
