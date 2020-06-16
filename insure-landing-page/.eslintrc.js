@@ -1,26 +1,25 @@
-npmodule.exports = {
+module.exports = {
   env: {
     browser: true,
-    es2020: true,
+    es6: true,
   },
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'airbnb',
-    'prettier',
-    'prettier/react',
-  ],
+  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 11,
+    ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
-    'import/prefer-default-export': 'off',
+    'react/jsx-filename-extension': ['warn', { extensions: ['.jsx', '.js'] }],
   },
+  'import/prefer-default-export': 'off',
 };
