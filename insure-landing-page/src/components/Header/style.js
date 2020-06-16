@@ -52,12 +52,18 @@ export const Image = styled.img`
 `;
 
 export const Button = styled.button`
-  background-color: hsl(0, 0%, 98%);
+  background-color: transparent;
   font-family: 'Karla', sans-serif;
-  color: hsl(256, 26%, 20%);
+  color: hsl(0, 0%, 98%);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 13px 20px;
-  border: none;
+  border: 1px solid hsl(0, 0%, 98%);
+  transition: all 500ms;
+
+  &:hover {
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(256, 26%, 20%);
+  }
 `;
