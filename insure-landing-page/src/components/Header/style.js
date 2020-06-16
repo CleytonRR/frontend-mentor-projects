@@ -15,7 +15,7 @@ export const HeaderContainer = styled.header`
 export const Container = styled.div`
   width: 80%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 `;
