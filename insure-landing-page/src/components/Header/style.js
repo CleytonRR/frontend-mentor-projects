@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 import BackgroundSvg from '../../assets/bg-pattern-intro-right-desktop.svg';
+import BackgroundSvgMobile from '../../assets/bg-pattern-intro-right-mobile.svg';
 
 export const HeaderContainer = styled.header`
   width: 100vw;
@@ -8,8 +9,11 @@ export const HeaderContainer = styled.header`
   background-image: url(${BackgroundSvg});
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 400px 400px;
-  height: 450px;
+
+  @media (max-width: 375px) {
+    background-image: url(${BackgroundSvgMobile});
+    background-position: bottom right;
+  }
 `;
 
 export const Container = styled.div`
@@ -18,11 +22,23 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+
+  @media (max-width: 770px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `;
 
 export const ContainerText = styled.div`
   font-family: 'DM Serif Display', serif;
   width: 600px;
+
+  @media (max-width: 770px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Title = styled.h1`
@@ -31,7 +47,7 @@ export const Title = styled.h1`
   font-size: 60px;
   margin-bottom: 0;
 
-  &:before {
+  &::before {
     content: '';
     width: 100px;
     height: 2px;
@@ -39,16 +55,42 @@ export const Title = styled.h1`
     background-color: #fff;
     margin-bottom: 20px;
   }
+
+  @media (max-width: 770px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 518px) {
+    font-size: 40px;
+  }
 `;
 
 export const Detail = styled.p`
   color: hsl(0, 0%, 98%);
   font-family: 'Karla', sans-serif;
+
+  @media (max-width: 770px) {
+    text-align: center;
+  }
 `;
 
 export const Image = styled.img`
   transform: translateY(100px);
   height: 450px;
+
+  @media (max-width: 770px) {
+    transform: none;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 375px;
+    height: 451px;
+  }
 `;
 
 export const Button = styled.button`
@@ -65,5 +107,9 @@ export const Button = styled.button`
   &:hover {
     background-color: hsl(0, 0%, 98%);
     color: hsl(256, 26%, 20%);
+  }
+
+  @media (max-width: 770px) {
+    margin-bottom: 20px;
   }
 `;
