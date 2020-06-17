@@ -1,11 +1,16 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 import { ContainerMenu, Menu, LogoMenu, Hamburger, MenuItem, ButtonMenu } from "./style";
 
 import logo from '../../assets/logo.svg'
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "initial"
+  }, [open]);
+
     return (
         <ContainerMenu>
             <LogoMenu src={logo} />

@@ -41,6 +41,7 @@ export const Hamburger = styled.button`
 
 export const Menu = styled.ul`
   list-style: none;
+  transition: all 500ms ease-in;
 
   @media (max-width: 777px) {
     position: absolute;
