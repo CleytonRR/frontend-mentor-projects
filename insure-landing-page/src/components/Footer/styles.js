@@ -21,6 +21,10 @@ export const ContainerSocialMedia = styled.div`
   align-items: center;
   padding-bottom: 30px;
   border-bottom: 1px solid hsl(256, 26%, 20%);
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+  }
 `;
 
 export const Logo = styled.img``;
@@ -29,6 +33,10 @@ export const SocialMedia = styled.div`
   width: 120px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 560px) {
+    margin-top: 20px;
+  }
 `;
 
 export const SocialMediaItems = styled.img`
@@ -45,10 +53,19 @@ export const ContainerMoreOptions = styled.div`
   display: flex;
   justify-content: space-around;
   font-family: 'Karla', sans-serif;
+
+  @media (max-width: 560px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const ContainerItemsMoreOptions = styled.div`
   text-transform: uppercase;
+
+  @media (max-width: 560px) {
+    text-align: center;
+  }
 `;
 
 export const TitleMoreOptions = styled.h5`
